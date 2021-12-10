@@ -5,14 +5,14 @@ from telegram.utils.helpers import mention_html
 from telegram import ParseMode , Bot, Update
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 
-from Shizu import dispatcher, REDIS
-from Shizu.modules.disable import DisableAbleCommandHandler
-from Shizu.modules.helper_funcs.chat_status import (
+from Alpha import dispatcher, REDIS
+from Alpha.modules.disable import DisableAbleCommandHandler
+from Alpha.modules.helper_funcs.chat_status import (
     bot_admin,
     user_admin
 )
-from Shizu.modules.helper_funcs.extraction import extract_user_and_text
-from Shizu.modules.helper_funcs.alternate import typing_action
+from Alpha.modules.helper_funcs.extraction import extract_user_and_text
+from Alpha.modules.helper_funcs.alternate import typing_action
 
 
 
