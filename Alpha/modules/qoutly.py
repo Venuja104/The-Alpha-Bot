@@ -7,7 +7,7 @@ import urllib
 import emoji
 from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageOps
-from Shizu.events import register
+from Alpha.events import register
 from telethon.tl import functions, types
 
 COLORS = [
