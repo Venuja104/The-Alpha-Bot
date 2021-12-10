@@ -3,8 +3,8 @@ import time
 from datetime import datetime
 from io import BytesIO
 
-import Shizu.modules.sql.global_bans_sql as sql
-from Shizu import (
+import Alpha.modules.sql.global_bans_sql as sql
+from Alpha import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -18,14 +18,14 @@ from Shizu import (
     dispatcher,
     sw,
 )
-from Shizu.modules.helper_funcs.chat_status import (
+from Alpha.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from Shizu.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from Shizu.modules.helper_funcs.misc import send_to_list
-from Shizu.modules.sql.users_sql import get_user_com_chats
+from Alpha.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from Alpha.modules.helper_funcs.misc import send_to_list
+from Alpha.modules.sql.users_sql import get_user_com_chats
 from telegram import ParseMode, Update
 from telegram.error import BadRequest, TelegramError, Unauthorized
 from telegram.ext import (
