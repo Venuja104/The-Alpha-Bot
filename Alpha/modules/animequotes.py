@@ -1,9 +1,9 @@
 # Made By @Madepranav On Telegram & Github Id Superboyfan
 import random
 
-import Shizu.modules.animequotesstring as animequotesstring
-from Shizu import dispatcher
-from Shizu.modules.disable import DisableAbleCommandHandler
+import Alpha.modules.animequotesstring as animequotesstring
+from Alpha import dispatcher
+from Alpha.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
