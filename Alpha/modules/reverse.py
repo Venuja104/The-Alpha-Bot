@@ -7,8 +7,8 @@ from urllib.error import HTTPError, URLError
 
 import requests
 from bs4 import BeautifulSoup
-from Shizu import dispatcher
-from Shizu.modules.disable import DisableAbleCommandHandler
+from Alpha import dispatcher
+from Alpha.modules.disable import DisableAbleCommandHandler
 from telegram import InputMediaPhoto, TelegramError, Update
 from telegram.ext import CallbackContext, run_async
 
