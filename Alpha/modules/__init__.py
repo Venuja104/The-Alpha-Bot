@@ -1,4 +1,4 @@
-from Shizu import LOAD, LOGGER, NO_LOAD
+from Alpha import LOAD, LOGGER, NO_LOAD
 
 
 def __list_all_modules():
