@@ -104,7 +104,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from Shizu.config import Development as Config
+    from Alpha.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -181,7 +181,7 @@ else:
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("saitama", API_ID, API_HASH)
-pbot = Client("Shizu", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+pbot = Client("Alpha", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 
@@ -192,7 +192,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from Shizu.modules.helper_funcs.handlers import (
+from Alpha.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
