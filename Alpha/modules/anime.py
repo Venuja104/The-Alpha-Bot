@@ -5,10 +5,11 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from Alpha import DEV_USERS, DRAGONS, OWNER_ID, dispatcher
-from Alpha.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
+
+from Alpha import DEV_USERS, DRAGONS, OWNER_ID, dispatcher
+from Alpha.modules.disable import DisableAbleCommandHandler
 
 info_btn = "More Information"
 kaizoku_btn = "Kaizoku ☠️"
