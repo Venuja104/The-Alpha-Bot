@@ -11,12 +11,12 @@ import requests as r
 import wikipedia
 from bs4 import BeautifulSoup
 from requests import get, post
-from Shizu import DEV_USERS, OWNER_ID, dispatcher
-from Shizu.__main__ import GDPR, STATS
-from Shizu.modules.disable import DisableAbleCommandHandler
-from Shizu.modules.helper_funcs.alternate import send_action, typing_action
-from Shizu.modules.helper_funcs.chat_status import user_admin
-from Shizu.modules.helper_funcs.filters import CustomFilters
+from Alpha import DEV_USERS, OWNER_ID, dispatcher
+from Alpha.__main__ import GDPR, STATS
+from Alpha.modules.disable import DisableAbleCommandHandler
+from Alpha.modules.helper_funcs.alternate import send_action, typing_action
+from Alpha.modules.helper_funcs.chat_status import user_admin
+from Alpha.modules.helper_funcs.filters import CustomFilters
 from telegram import (
     Chat,
     ChatAction,
