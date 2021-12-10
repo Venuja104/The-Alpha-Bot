@@ -2,9 +2,9 @@ import time
 from typing import List
 
 import requests
-from Shizu import StartTime, dispatcher
-from Shizu.modules.disable import DisableAbleCommandHandler
-from Shizu.modules.helper_funcs.chat_status import sudo_plus
+from Alpha import StartTime, dispatcher
+from Alpha.modules.disable import DisableAbleCommandHandler
+from Alpha.modules.helper_funcs.chat_status import sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
