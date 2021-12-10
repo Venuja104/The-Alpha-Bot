@@ -1,0 +1,21 @@
+name: Sed-replacer
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: "SnowGirl"
+          replace: "Shizu"
+      - name: Pull All Updates
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Welcome to Shizu'
+          commit_options: '--no-verify'
+          repository: .
+          commit_user_name: TeamShizu
+          commit_user_email: rasindu.gimhan.21@gmail.com
+          commit_author: TeamShizu <rasindu.gimhan.21@gmail.com>
