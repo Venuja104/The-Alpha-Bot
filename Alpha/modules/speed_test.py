@@ -1,7 +1,7 @@
 import speedtest
-from Shizu import DEV_USERS, dispatcher
-from Shizu.modules.disable import DisableAbleCommandHandler
-from Shizu.modules.helper_funcs.chat_status import dev_plus
+from Alpha import DEV_USERS, dispatcher
+from Alpha.modules.disable import DisableAbleCommandHandler
+from Alpha.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 
