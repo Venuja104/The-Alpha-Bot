@@ -1,7 +1,7 @@
 import random
 
-from Shizu import dispatcher
-from Shizu.modules.disable import DisableAbleCommandHandler
+from Alpha import dispatcher
+from Alpha.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
