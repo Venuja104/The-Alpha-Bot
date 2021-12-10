@@ -1,6 +1,6 @@
 from geopy.geocoders import Nominatim
-from Shizu import dispatcher
-from Shizu.modules.helper_funcs.chat_status import user_admin
+from Alpha import dispatcher
+from Alpha.modules.helper_funcs.chat_status import user_admin
 from telegram import Location, ParseMode
 from telegram.ext import CommandHandler, run_async
 
