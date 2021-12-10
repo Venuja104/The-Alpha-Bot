@@ -4,8 +4,8 @@ import re
 import subprocess
 
 import requests
-import Shizu.modules.sql.userinfo_sql as sql
-from Shizu import (
+import Alpha.modules.sql.userinfo_sql as sql
+from Alpha import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -16,14 +16,14 @@ from Shizu import (
     dispatcher,
     sw,
 )
-from Shizu import telethn as SaitamaTelethonClient
-from Shizu.__main__ import STATS, TOKEN, USER_INFO
-from Shizu.modules.disable import DisableAbleCommandHandler
-from Shizu.modules.helper_funcs.chat_status import sudo_plus
-from Shizu.modules.helper_funcs.extraction import extract_user
-from Shizu.modules.sql.afk_sql import check_afk_status, is_afk
-from Shizu.modules.sql.global_bans_sql import is_user_gbanned
-from Shizu.modules.sql.users_sql import get_user_num_chats
+from Alpha import telethn as SaitamaTelethonClient
+from Alpha.__main__ import STATS, TOKEN, USER_INFO
+from Alpha.modules.disable import DisableAbleCommandHandler
+from Alpha.modules.helper_funcs.chat_status import sudo_plus
+from Alpha.modules.helper_funcs.extraction import extract_user
+from Alpha.modules.sql.afk_sql import check_afk_status, is_afk
+from Alpha.modules.sql.global_bans_sql import is_user_gbanned
+from Alpha.modules.sql.users_sql import get_user_num_chats
 from telegram import MAX_MESSAGE_LENGTH, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler
