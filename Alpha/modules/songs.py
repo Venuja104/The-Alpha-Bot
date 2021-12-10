@@ -3,8 +3,8 @@ import os
 import aiohttp
 from pyrogram import filters
 from pytube import YouTube
-from Shizu import LOGGER, pbot
-from Shizu.utils.ut import get_arg
+from Alpha import LOGGER, pbot
+from Alpha.utils.ut import get_arg
 from youtubesearchpython import VideosSearch
 
 
