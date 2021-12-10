@@ -1,4 +1,4 @@
-#    Copyright (C) 2020-2021 by @TeamShizu
+#    Copyright (C) 2020-2021 by @TeamAlphaZero
 #    This programme is a part of Liza TG bot project
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -25,9 +25,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
     UserNotParticipant,
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
-from Shizu import DRAGONS as SUDO_USERS
-from Shizu import pbot
-from Shizu.modules.sql import forceSubscribe_sql as sql
+from Alpha import DRAGONS as SUDO_USERS
+from Alpha import pbot
+from Alpha.modules.sql import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
@@ -195,7 +195,7 @@ def config(client, message):
 __help__ = """
 *ForceSubscribe:*
 
-❂ Daisy can mute members who are not subscribed your channel until they subscribe
+❂ Alpha can mute members who are not subscribed your channel until they subscribe
 ❂ When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
 
 *Setup*
