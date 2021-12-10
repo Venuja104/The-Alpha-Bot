@@ -89,18 +89,17 @@ buttons = [
     ],
 ]
 
-SHIZU_IMG = "https://telegra.ph/file/89336a96eb696d94558ba.jpg"
+ALPHA_STICKER = "CAACAgUAAxkBAAIw5WGox1xPHoZo3kkK_3ALpHAu2qCAAAIqAwACfDhJVRXiA-sS8DQgIgQ"
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/922a73ff9aca155b23608.jpg)
+*Main Commands :* 🤖
+
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
 ✪ /settings: 
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
-
-      * POWERED BY *:- [ShizuUpdates](t.me/ShizuUpdates)
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
@@ -109,7 +108,7 @@ HELP_STRINGS = f"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
-Support them💖  [Rasiya](t.me/Mr_Rasiyaa)"""
+Support them  [Venuja Thilakarathna](t.me/Venuja_Sadew)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -183,7 +182,7 @@ def test(update, context):
     except:
         pass
     update.effective_message.reply_text(
-        "Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN
+        "Hello tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN
     )
     update.effective_message.reply_text("This person edited a message")
     print(update.effective_message)
