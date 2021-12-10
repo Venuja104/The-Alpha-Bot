@@ -5,9 +5,9 @@ import time
 import traceback
 
 import aiohttp
-from Shizu import telethn as bot
-from Shizu.modules.urluploader import download_file
-from Shizu.utils.uputils import humanbytes, progress
+from Alpha import telethn as bot
+from Alpha.modules.urluploader import download_file
+from Alpha.utils.uputils import humanbytes, progress
 from telethon import events
 
 DOWNLOADPATH = "Downloads/"
