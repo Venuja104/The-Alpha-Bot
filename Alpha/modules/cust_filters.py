@@ -3,23 +3,23 @@ import re
 from html import escape
 
 import telegram
-from Shizu import DRAGONS, LOGGER, dispatcher
-from Shizu.modules.connection import connected
-from Shizu.modules.disable import DisableAbleCommandHandler
-from Shizu.modules.helper_funcs.alternate import send_message, typing_action
-from Shizu.modules.helper_funcs.chat_status import user_admin
-from Shizu.modules.helper_funcs.extraction import extract_text
-from Shizu.modules.helper_funcs.filters import CustomFilters
-from Shizu.modules.helper_funcs.handlers import MessageHandlerChecker
-from Shizu.modules.helper_funcs.misc import build_keyboard_parser
-from Shizu.modules.helper_funcs.msg_types import get_filter_type
-from Shizu.modules.helper_funcs.string_handling import (
+from Alpha import DRAGONS, LOGGER, dispatcher
+from Alpha.modules.connection import connected
+from Alpha.modules.disable import DisableAbleCommandHandler
+from Alpha.modules.helper_funcs.alternate import send_message, typing_action
+from Alpha.modules.helper_funcs.chat_status import user_admin
+from Alpha.modules.helper_funcs.extraction import extract_text
+from Alpha.modules.helper_funcs.filters import CustomFilters
+from Alpha.modules.helper_funcs.handlers import MessageHandlerChecker
+from Alpha.modules.helper_funcs.misc import build_keyboard_parser
+from Alpha.modules.helper_funcs.msg_types import get_filter_type
+from Alpha.modules.helper_funcs.string_handling import (
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
     split_quotes,
 )
-from Shizu.modules.sql import cust_filters_sql as sql
+from Alpha.modules.sql import cust_filters_sql as sql
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Message, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import (
