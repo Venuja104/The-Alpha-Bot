@@ -1,6 +1,6 @@
 from enum import IntEnum, unique
 
-from Shizu.modules.helper_funcs.string_handling import button_markdown_parser
+from Alpha.modules.helper_funcs.string_handling import button_markdown_parser
 from telegram import Message
 
 
