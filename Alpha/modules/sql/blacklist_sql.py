@@ -1,8 +1,7 @@
 import threading
 
-from sqlalchemy import Column, Integer, String, UnicodeText, distinct, func
-
 from Shizu.modules.sql import BASE, SESSION
+from sqlalchemy import Column, Integer, String, UnicodeText, distinct, func
 
 
 class BlackListFilters(BASE):

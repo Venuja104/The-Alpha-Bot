@@ -25,7 +25,6 @@ from pyrogram.errors.exceptions.bad_request_400 import (
     UserNotParticipant,
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
-
 from Shizu import DRAGONS as SUDO_USERS
 from Shizu import pbot
 from Shizu.modules.sql import forceSubscribe_sql as sql

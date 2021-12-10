@@ -1,9 +1,8 @@
 # New chat added -> setup permissions
 import threading
 
-from sqlalchemy import Boolean, Column, String
-
 from Shizu.modules.sql import BASE, SESSION
+from sqlalchemy import Boolean, Column, String
 
 
 class Permissions(BASE):

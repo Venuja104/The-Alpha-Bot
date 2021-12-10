@@ -7,10 +7,9 @@ import html2text
 import requests
 from bing_image_downloader import downloader
 from requests import get, post
-from telethon.tl import functions, types
-
 from Shizu import telethn as client
 from Shizu.events import register
+from telethon.tl import functions, types
 
 
 def progress(current, total):

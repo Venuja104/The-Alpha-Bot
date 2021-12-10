@@ -1,14 +1,5 @@
 import html
 
-from telegram import ParseMode, Update
-from telegram.ext import (
-    CallbackContext,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-    run_async,
-)
-
 from Shizu import ALLOW_EXCL, CustomCommandHandler, dispatcher
 from Shizu.modules.disable import DisableAbleCommandHandler
 from Shizu.modules.helper_funcs.chat_status import (
@@ -18,6 +9,14 @@ from Shizu.modules.helper_funcs.chat_status import (
     user_admin,
 )
 from Shizu.modules.sql import cleaner_sql as sql
+from telegram import ParseMode, Update
+from telegram.ext import (
+    CallbackContext,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+    run_async,
+)
 
 if ALLOW_EXCL:
     CMD_STARTERS = ("/", "!")

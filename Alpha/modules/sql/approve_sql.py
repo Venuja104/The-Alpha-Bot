@@ -1,8 +1,7 @@
 import threading
 
-from sqlalchemy import Column, Integer, String
-
 from Shizu.modules.sql import BASE, SESSION
+from sqlalchemy import Column, Integer, String
 
 
 class Approvals(BASE):

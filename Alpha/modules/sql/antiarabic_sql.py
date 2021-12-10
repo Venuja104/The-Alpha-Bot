@@ -1,9 +1,8 @@
 import threading
 from typing import Union
 
-from sqlalchemy import Boolean, Column, String
-
 from Shizu.modules.sql import BASE, SESSION
+from sqlalchemy import Boolean, Column, String
 
 
 class AntiArabicChatSettings(BASE):

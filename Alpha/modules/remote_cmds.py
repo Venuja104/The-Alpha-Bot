@@ -1,7 +1,3 @@
-from telegram import ChatPermissions, Update
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, CommandHandler, run_async
-
 from Shizu import dispatcher
 from Shizu.modules.helper_funcs.chat_status import (
     bot_admin,
@@ -11,6 +7,9 @@ from Shizu.modules.helper_funcs.chat_status import (
 )
 from Shizu.modules.helper_funcs.extraction import extract_user_and_text
 from Shizu.modules.helper_funcs.filters import CustomFilters
+from telegram import ChatPermissions, Update
+from telegram.error import BadRequest
+from telegram.ext import CallbackContext, CommandHandler, run_async
 
 RBAN_ERRORS = {
     "User is an administrator of the chat",

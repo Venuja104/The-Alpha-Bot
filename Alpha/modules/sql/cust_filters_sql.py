@@ -1,9 +1,8 @@
 import threading
 
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
-
 from Shizu.modules.helper_funcs.msg_types import Types
 from Shizu.modules.sql import BASE, SESSION
+from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
 
 
 class CustomFilters(BASE):

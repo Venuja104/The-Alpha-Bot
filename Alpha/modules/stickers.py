@@ -6,6 +6,8 @@ from html import escape
 import requests
 from bs4 import BeautifulSoup as bs
 from PIL import Image
+from Shizu import dispatcher
+from Shizu.modules.disable import DisableAbleCommandHandler
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -15,9 +17,6 @@ from telegram import (
 )
 from telegram.ext import CallbackContext, run_async
 from telegram.utils.helpers import mention_html
-
-from Shizu import dispatcher
-from Shizu.modules.disable import DisableAbleCommandHandler
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 

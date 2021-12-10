@@ -1,15 +1,14 @@
 import asyncio
 import time
 
-from telethon import events
-from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
-from telethon.tl.types import ChannelParticipantsAdmins
-
 from Shizu import DEV_USERS, telethn
 from Shizu.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
+from telethon import events
+from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
+from telethon.tl.types import ChannelParticipantsAdmins
 
 
 # Check if user has admin rights

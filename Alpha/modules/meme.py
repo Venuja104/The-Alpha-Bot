@@ -3,16 +3,15 @@ import random
 import re
 
 import requests as r
-from telegram import MAX_MESSAGE_LENGTH, ParseMode, Update
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
-from telegram.utils.helpers import escape_markdown
-
 import Shizu.modules.helper_funcs.fun_strings as fun
 from Shizu import DEMONS, DRAGONS, dispatcher
 from Shizu.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 from Shizu.modules.helper_funcs.alternate import typing_action
 from Shizu.modules.helper_funcs.extraction import extract_user
+from telegram import MAX_MESSAGE_LENGTH, ParseMode, Update
+from telegram.error import BadRequest
+from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
+from telegram.utils.helpers import escape_markdown
 
 
 @run_async

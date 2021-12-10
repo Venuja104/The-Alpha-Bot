@@ -11,6 +11,12 @@ import requests as r
 import wikipedia
 from bs4 import BeautifulSoup
 from requests import get, post
+from Shizu import DEV_USERS, OWNER_ID, dispatcher
+from Shizu.__main__ import GDPR, STATS
+from Shizu.modules.disable import DisableAbleCommandHandler
+from Shizu.modules.helper_funcs.alternate import send_action, typing_action
+from Shizu.modules.helper_funcs.chat_status import user_admin
+from Shizu.modules.helper_funcs.filters import CustomFilters
 from telegram import (
     Chat,
     ChatAction,
@@ -26,13 +32,6 @@ from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown
 from tswift import Song
-
-from Shizu import DEV_USERS, OWNER_ID, dispatcher
-from Shizu.__main__ import GDPR, STATS
-from Shizu.modules.disable import DisableAbleCommandHandler
-from Shizu.modules.helper_funcs.alternate import send_action, typing_action
-from Shizu.modules.helper_funcs.chat_status import user_admin
-from Shizu.modules.helper_funcs.filters import CustomFilters
 
 
 @run_async

@@ -1,10 +1,9 @@
 import wikipedia
+from Shizu import dispatcher
+from Shizu.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 from wikipedia.exceptions import DisambiguationError, PageError
-
-from Shizu import dispatcher
-from Shizu.modules.disable import DisableAbleCommandHandler
 
 
 @run_async

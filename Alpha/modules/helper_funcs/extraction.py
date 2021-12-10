@@ -1,12 +1,11 @@
 from typing import List, Optional
 
+from Shizu import LOGGER
+from Shizu.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
-
-from Shizu import LOGGER
-from Shizu.modules.users import get_user_id
 
 
 def id_from_reply(message):

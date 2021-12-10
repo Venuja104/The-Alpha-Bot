@@ -1,8 +1,7 @@
 import threading
 
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
-
 from Shizu.modules.sql import BASE, SESSION
+from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 
 
 class GloballyBannedUsers(BASE):

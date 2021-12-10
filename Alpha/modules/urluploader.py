@@ -2,7 +2,6 @@ import os
 import time
 
 import aiohttp
-
 from Shizu.utils.uputils import humanbytes, time_formatter
 
 

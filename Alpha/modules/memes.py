@@ -6,11 +6,10 @@ import random
 from pathlib import Path
 
 from PIL import Image
-from spongemock import spongemock
-from telegram.ext import run_async
-
 from Shizu import dispatcher
 from Shizu.modules.disable import DisableAbleCommandHandler
+from spongemock import spongemock
+from telegram.ext import run_async
 
 
 @run_async

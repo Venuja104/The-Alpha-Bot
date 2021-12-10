@@ -1,9 +1,8 @@
-from telegram import ParseMode
-from telegram.ext import run_async
-
 from Shizu import dispatcher
 from Shizu.modules.disable import DisableAbleCommandHandler
 from Shizu.modules.helper_funcs.alternate import typing_action
+from telegram import ParseMode
+from telegram.ext import run_async
 
 normiefont = [
     "a",

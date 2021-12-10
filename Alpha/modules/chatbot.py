@@ -3,9 +3,14 @@ import html
 # AI module using Intellivoid's Coffeehouse API by @TheRealPhoenix
 from time import sleep, time
 
+import Shizu.modules.sql.chatbot_sql as sql
 from coffeehouse.api import API
 from coffeehouse.exception import CoffeeHouseError as CFError
 from coffeehouse.lydia import LydiaAI
+from Shizu import AI_API_KEY, SUPPORT_CHAT, dispatcher
+from Shizu.modules.helper_funcs.chat_status import user_admin
+from Shizu.modules.helper_funcs.filters import CustomFilters
+from Shizu.modules.log_channel import gloggable
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import (
@@ -16,12 +21,6 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html
-
-import Shizu.modules.sql.chatbot_sql as sql
-from Shizu import AI_API_KEY, SUPPORT_CHAT, dispatcher
-from Shizu.modules.helper_funcs.chat_status import user_admin
-from Shizu.modules.helper_funcs.filters import CustomFilters
-from Shizu.modules.log_channel import gloggable
 
 CoffeeHouseAPI = API(AI_API_KEY)
 api_client = LydiaAI(CoffeeHouseAPI)

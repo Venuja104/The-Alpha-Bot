@@ -3,10 +3,9 @@ import os
 import aiohttp
 from pyrogram import filters
 from pytube import YouTube
-from youtubesearchpython import VideosSearch
-
 from Shizu import LOGGER, pbot
 from Shizu.utils.ut import get_arg
+from youtubesearchpython import VideosSearch
 
 
 def yt_search(song):

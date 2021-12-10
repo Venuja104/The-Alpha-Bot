@@ -1,9 +1,8 @@
-from telegram.ext import run_async
-
 from Shizu import dispatcher
 from Shizu.modules.disable import DisableAbleCommandHandler
 from Shizu.modules.helper_funcs.alternate import send_message
 from Shizu.modules.helper_funcs.chat_status import user_admin
+from telegram.ext import run_async
 
 
 @run_async

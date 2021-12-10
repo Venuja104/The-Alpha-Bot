@@ -2,12 +2,11 @@ import os
 import time
 import zipfile
 
-from telethon import types
-from telethon.tl import functions
-
 from Shizu import TEMP_DOWNLOAD_DIRECTORY
 from Shizu import telethn as client
 from Shizu.events import register
+from telethon import types
+from telethon.tl import functions
 
 
 async def is_register_admin(chat, user):

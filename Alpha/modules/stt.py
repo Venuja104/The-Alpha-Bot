@@ -2,13 +2,12 @@ import os
 from datetime import datetime
 
 import requests
-from telethon import *
-from telethon.tl import functions, types
-from telethon.tl.types import *
-
 from Shizu import *
 from Shizu import telethn
 from Shizu.events import register
+from telethon import *
+from telethon.tl import functions, types
+from telethon.tl.types import *
 
 
 async def is_register_admin(chat, user):

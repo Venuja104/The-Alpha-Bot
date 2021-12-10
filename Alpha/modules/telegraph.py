@@ -1,9 +1,8 @@
 import os
 
 from pyrogram import filters
-from telegraph import upload_file
-
 from Shizu import pbot as app
+from telegraph import upload_file
 
 
 @app.on_message(filters.command("telegraph"))

@@ -1,9 +1,8 @@
 from geopy.geocoders import Nominatim
-from telegram import Location, ParseMode
-from telegram.ext import CommandHandler, run_async
-
 from Shizu import dispatcher
 from Shizu.modules.helper_funcs.chat_status import user_admin
+from telegram import Location, ParseMode
+from telegram.ext import CommandHandler, run_async
 
 GMAPS_LOC = "https://maps.googleapis.com/maps/api/geocode/json"
 

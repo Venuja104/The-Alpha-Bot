@@ -1,5 +1,7 @@
 import threading
 
+from Shizu import dispatcher
+from Shizu.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
@@ -9,9 +11,6 @@ from sqlalchemy import (
     UniqueConstraint,
     func,
 )
-
-from Shizu import dispatcher
-from Shizu.modules.sql import BASE, SESSION
 
 
 class Users(BASE):

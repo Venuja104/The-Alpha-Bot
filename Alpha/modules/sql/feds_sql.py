@@ -1,10 +1,9 @@
 import threading
 
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
-from telegram.error import BadRequest, Unauthorized
-
 from Shizu import dispatcher
 from Shizu.modules.sql import BASE, SESSION
+from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
+from telegram.error import BadRequest, Unauthorized
 
 
 class Federations(BASE):

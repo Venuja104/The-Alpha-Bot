@@ -1,8 +1,7 @@
 import threading
 
-from sqlalchemy import Column, Integer, String, UnicodeText
-
 from Shizu.modules.sql import BASE, SESSION
+from sqlalchemy import Column, Integer, String, UnicodeText
 
 DEF_COUNT = 1
 DEF_LIMIT = 0

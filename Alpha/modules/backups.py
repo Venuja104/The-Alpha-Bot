@@ -3,10 +3,6 @@ import os
 import time
 from io import BytesIO
 
-from telegram import Message, ParseMode
-from telegram.error import BadRequest
-from telegram.ext import CommandHandler, run_async
-
 # from Shizu.modules.sql import warns_sql as warnssql
 import Shizu.modules.sql.blacklist_sql as blacklistsql
 
@@ -23,6 +19,9 @@ from Shizu.modules.connection import connected
 from Shizu.modules.helper_funcs.alternate import typing_action
 from Shizu.modules.helper_funcs.chat_status import user_admin
 from Shizu.modules.sql import disable_sql as disabledsql
+from telegram import Message, ParseMode
+from telegram.error import BadRequest
+from telegram.ext import CommandHandler, run_async
 
 
 @run_async

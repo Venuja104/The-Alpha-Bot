@@ -1,6 +1,5 @@
-from telethon import events
-
 from Shizu import telethn
+from telethon import events
 
 
 def register(**args):

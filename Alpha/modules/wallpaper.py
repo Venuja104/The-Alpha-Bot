@@ -1,11 +1,10 @@
 from random import randint
 
 import requests as r
-from telegram import Update
-from telegram.ext import CallbackContext, run_async
-
 from Shizu import SUPPORT_CHAT, WALL_API, dispatcher
 from Shizu.modules.disable import DisableAbleCommandHandler
+from telegram import Update
+from telegram.ext import CallbackContext, run_async
 
 # Wallpapers module by @TheRealPhoenix using wall.alphacoders.com
 

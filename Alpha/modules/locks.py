@@ -1,20 +1,7 @@
 import html
 
-from alphabet_detector import AlphabetDetector
-from telegram import (
-    Chat,
-    ChatPermissions,
-    Message,
-    MessageEntity,
-    ParseMode,
-    TelegramError,
-)
-from telegram.error import BadRequest
-from telegram.ext import CommandHandler, Filters, MessageHandler
-from telegram.ext.dispatcher import run_async
-from telegram.utils.helpers import mention_html
-
 import Shizu.modules.sql.locks_sql as sql
+from alphabet_detector import AlphabetDetector
 from Shizu import DRAGONS, LOGGER, dispatcher
 from Shizu.modules.connection import connected
 from Shizu.modules.disable import DisableAbleCommandHandler
@@ -27,6 +14,18 @@ from Shizu.modules.helper_funcs.chat_status import (
     user_not_admin,
 )
 from Shizu.modules.log_channel import loggable
+from telegram import (
+    Chat,
+    ChatPermissions,
+    Message,
+    MessageEntity,
+    ParseMode,
+    TelegramError,
+)
+from telegram.error import BadRequest
+from telegram.ext import CommandHandler, Filters, MessageHandler
+from telegram.ext.dispatcher import run_async
+from telegram.utils.helpers import mention_html
 
 ad = AlphabetDetector()
 

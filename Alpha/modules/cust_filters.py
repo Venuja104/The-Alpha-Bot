@@ -3,18 +3,6 @@ import re
 from html import escape
 
 import telegram
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Message, ParseMode
-from telegram.error import BadRequest
-from telegram.ext import (
-    CallbackQueryHandler,
-    CommandHandler,
-    DispatcherHandlerStop,
-    Filters,
-    MessageHandler,
-    run_async,
-)
-from telegram.utils.helpers import escape_markdown, mention_html
-
 from Shizu import DRAGONS, LOGGER, dispatcher
 from Shizu.modules.connection import connected
 from Shizu.modules.disable import DisableAbleCommandHandler
@@ -32,6 +20,17 @@ from Shizu.modules.helper_funcs.string_handling import (
     split_quotes,
 )
 from Shizu.modules.sql import cust_filters_sql as sql
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Message, ParseMode
+from telegram.error import BadRequest
+from telegram.ext import (
+    CallbackQueryHandler,
+    CommandHandler,
+    DispatcherHandlerStop,
+    Filters,
+    MessageHandler,
+    run_async,
+)
+from telegram.utils.helpers import escape_markdown, mention_html
 
 HANDLER_GROUP = 10
 
