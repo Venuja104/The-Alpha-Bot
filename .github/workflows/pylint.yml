@@ -31,6 +31,6 @@ jobs:
           commit_message: 'pylint: auto fixes'
           commit_options: '--no-verify'
           repository: .
-          commit_user_name: TeamShizu
-          commit_user_email: rasindu.gimhan.21@gmail.com
-          commit_author: TeamShizu <rasindu.gimhan.21@gmail.com>
+          commit_user_name: Venuja104
+          commit_user_email: Venujathilakarathna12@gmail.com
+          commit_author: Venuja104 <venujathilakarathna12@gmail.com>
