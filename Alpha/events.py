@@ -1,4 +1,4 @@
-from Shizu import telethn
+from Alpha import telethn
 from telethon import events
 
 
