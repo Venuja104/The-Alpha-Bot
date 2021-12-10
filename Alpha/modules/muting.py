@@ -1,16 +1,16 @@
 import html
 
-from Shizu import LOGGER, TIGERS, dispatcher
-from Shizu.modules.helper_funcs.chat_status import (
+from Alpha import LOGGER, TIGERS, dispatcher
+from Alpha.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
     is_user_admin,
     user_admin,
 )
-from Shizu.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from Shizu.modules.helper_funcs.string_handling import extract_time
-from Shizu.modules.log_channel import loggable
+from Alpha.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from Alpha.modules.helper_funcs.string_handling import extract_time
+from Alpha.modules.log_channel import loggable
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
