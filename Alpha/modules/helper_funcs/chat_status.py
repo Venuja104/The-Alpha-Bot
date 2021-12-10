@@ -2,7 +2,7 @@ from functools import wraps
 from threading import RLock
 
 from cachetools import TTLCache
-from Shizu import (
+from Alpha import (
     DEL_CMDS,
     DEMONS,
     DEV_USERS,
