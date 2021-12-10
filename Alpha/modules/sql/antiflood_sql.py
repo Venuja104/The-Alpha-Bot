@@ -1,7 +1,8 @@
 import threading
 
-from Alpha.modules.sql import BASE, SESSION
 from sqlalchemy import Column, Integer, String, UnicodeText
+
+from Alpha.modules.sql import BASE, SESSION
 
 DEF_COUNT = 1
 DEF_LIMIT = 0
