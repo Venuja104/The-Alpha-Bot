@@ -1,10 +1,11 @@
 from random import randint
 
 import requests as r
-from Alpha import SUPPORT_CHAT, WALL_API, dispatcher
-from Alpha.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
+
+from Alpha import SUPPORT_CHAT, WALL_API, dispatcher
+from Alpha.modules.disable import DisableAbleCommandHandler
 
 # Wallpapers module by @TheRealPhoenix using wall.alphacoders.com
 

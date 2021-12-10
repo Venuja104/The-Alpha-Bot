@@ -4,6 +4,15 @@ import re
 import subprocess
 
 import requests
+from telegram import MAX_MESSAGE_LENGTH, ParseMode, Update
+from telegram.error import BadRequest
+from telegram.ext import CallbackContext, CommandHandler
+from telegram.ext.dispatcher import run_async
+from telegram.utils.helpers import escape_markdown, mention_html
+from telethon import events
+from telethon.tl.functions.channels import GetFullChannelRequest
+from telethon.tl.types import ChannelParticipantsAdmins
+
 import Alpha.modules.sql.userinfo_sql as sql
 from Alpha import (
     DEMONS,
@@ -24,14 +33,6 @@ from Alpha.modules.helper_funcs.extraction import extract_user
 from Alpha.modules.sql.afk_sql import check_afk_status, is_afk
 from Alpha.modules.sql.global_bans_sql import is_user_gbanned
 from Alpha.modules.sql.users_sql import get_user_num_chats
-from telegram import MAX_MESSAGE_LENGTH, ParseMode, Update
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, CommandHandler
-from telegram.ext.dispatcher import run_async
-from telegram.utils.helpers import escape_markdown, mention_html
-from telethon import events
-from telethon.tl.functions.channels import GetFullChannelRequest
-from telethon.tl.types import ChannelParticipantsAdmins
 
 
 def no_by_per(totalhp, percentage):
