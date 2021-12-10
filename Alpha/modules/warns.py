@@ -3,25 +3,25 @@ import re
 from typing import Optional
 
 import telegram
-from Shizu import TIGERS, WOLVES, dispatcher
-from Shizu.modules.disable import DisableAbleCommandHandler
-from Shizu.modules.helper_funcs.chat_status import (
+from Alpha import TIGERS, WOLVES, dispatcher
+from Alpha.modules.disable import DisableAbleCommandHandler
+from Alpha.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from Shizu.modules.helper_funcs.extraction import (
+from Alpha.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from Shizu.modules.helper_funcs.filters import CustomFilters
-from Shizu.modules.helper_funcs.misc import split_message
-from Shizu.modules.helper_funcs.string_handling import split_quotes
-from Shizu.modules.log_channel import loggable
-from Shizu.modules.sql import warns_sql as sql
+from Alpha.modules.helper_funcs.filters import CustomFilters
+from Alpha.modules.helper_funcs.misc import split_message
+from Alpha.modules.helper_funcs.string_handling import split_quotes
+from Alpha.modules.log_channel import loggable
+from Alpha.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
