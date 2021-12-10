@@ -2,7 +2,7 @@ import json
 from pprint import pprint
 
 import requests
-from Shizu import dispatcher
+from Alpha import dispatcher
 from telegram.ext import CommandHandler
 
 # Open API key
