@@ -1,4 +1,4 @@
-from Shizu import DEMONS, DEV_USERS, DRAGONS
+from Alpha import DEMONS, DEV_USERS, DRAGONS
 from telegram import Message
 from telegram.ext import BaseFilter
 
