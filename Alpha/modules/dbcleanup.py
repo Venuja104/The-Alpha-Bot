@@ -1,9 +1,9 @@
 from time import sleep
 
-import Shizu.modules.sql.global_bans_sql as gban_sql
-import Shizu.modules.sql.users_sql as user_sql
-from Shizu import DEV_USERS, OWNER_ID, dispatcher
-from Shizu.modules.helper_funcs.chat_status import dev_plus
+import Alpha.modules.sql.global_bans_sql as gban_sql
+import Alpha.modules.sql.users_sql as user_sql
+from Alpha import DEV_USERS, OWNER_ID, dispatcher
+from Alpha.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
