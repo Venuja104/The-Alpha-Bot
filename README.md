@@ -12,8 +12,8 @@ Complete guide on deploying @Shizu_herobot's clone on Heroku.
 
 
 
-☆ Video by [Mr RG YT](https://youtube.com/cMrRGYT) ☆
-[![YouTube](https://img.shields.io/badge/YouTube-Video%20Tutorial-red?logo=youtube)](https://www.youtube.com/watch?v=6LVb2gsi-S4)
+☆ Video is Comming Soon ☆
+[![YouTube](https://img.shields.io/badge/YouTube-Video%20Tutorial-red?logo=youtube)](https://www.youtube.com/channel/UCL8PI42TZ_uaQWVVKUJx9Eg)
 
 ## New version Avaiilable on Telegram as [Alpha Zero](https://t.me/Shizu_herobot)
 ## Alpha Zero is the latest
@@ -26,7 +26,7 @@ This repo was just revamped to suit an Anime-centric community. All original cre
 
 All other credits mentioned on top of scripts
 
-Should any be missing kindly let us know at [TeamShizu](https://t.me/ShizuUpdates) or simply submit a pull request on the readme.
+Should any be missing kindly let us know at [AlphaZeroUpdates](https://t.me/AlphaZeroUpdates) or simply submit a pull request on the readme.
 
 ## Alpha Zero the telegram Bot Project
 The Advanced Branch (For PRO's)
@@ -34,4 +34,4 @@ Alpha (advanced)
 
 
 ## Special Credits
-- [Venuja Thilakarathna](https://github.com/Venuja104) - Developer of Project
+- [Venuja Thilakarathna](https://github.com/Venuja104) - Bot Owner & Developer of Project
