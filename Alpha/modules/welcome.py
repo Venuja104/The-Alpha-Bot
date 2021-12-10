@@ -4,6 +4,24 @@ import re
 import time
 from functools import partial
 
+from telegram import (
+    ChatPermissions,
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    ParseMode,
+    Update,
+)
+from telegram.error import BadRequest
+from telegram.ext import (
+    CallbackContext,
+    CallbackQueryHandler,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+    run_async,
+)
+from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
+
 import Alpha.modules.sql.welcome_sql as sql
 from Alpha import (
     DEMONS,
@@ -26,23 +44,6 @@ from Alpha.modules.helper_funcs.string_handling import (
 )
 from Alpha.modules.log_channel import loggable
 from Alpha.modules.sql.global_bans_sql import is_user_gbanned
-from telegram import (
-    ChatPermissions,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    ParseMode,
-    Update,
-)
-from telegram.error import BadRequest
-from telegram.ext import (
-    CallbackContext,
-    CallbackQueryHandler,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-    run_async,
-)
-from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
 VALID_WELCOME_FORMATTERS = [
     "first",

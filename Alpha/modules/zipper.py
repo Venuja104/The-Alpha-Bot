@@ -2,11 +2,12 @@ import os
 import time
 import zipfile
 
+from telethon import types
+from telethon.tl import functions
+
 from Alpha import TEMP_DOWNLOAD_DIRECTORY
 from Alpha import telethn as client
 from Alpha.events import register
-from telethon import types
-from telethon.tl import functions
 
 
 async def is_register_admin(chat, user):

@@ -1,10 +1,11 @@
 from asyncio import sleep
 
-from Alpha import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, telethn
 from telethon import events
 from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChannelParticipantsAdmins, ChatBannedRights
+
+from Alpha import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, telethn
 
 # =================== CONSTANT ===================
 
