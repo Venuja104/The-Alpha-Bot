@@ -1,5 +1,6 @@
-from Alpha import telethn
 from telethon import events
+
+from Alpha import telethn
 
 
 def register(**args):
