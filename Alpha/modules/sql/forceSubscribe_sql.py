@@ -14,8 +14,9 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
-from Alpha.modules.sql import BASE, SESSION
 from sqlalchemy import Column, Numeric, String
+
+from Alpha.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):

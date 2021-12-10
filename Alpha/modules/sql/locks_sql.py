@@ -1,8 +1,9 @@
 # New chat added -> setup permissions
 import threading
 
-from Alpha.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String
+
+from Alpha.modules.sql import BASE, SESSION
 
 
 class Permissions(BASE):

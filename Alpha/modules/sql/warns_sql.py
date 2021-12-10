@@ -1,8 +1,9 @@
 import threading
 
-from Alpha.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
 from sqlalchemy.dialects import postgresql
+
+from Alpha.modules.sql import BASE, SESSION
 
 
 class Warns(BASE):

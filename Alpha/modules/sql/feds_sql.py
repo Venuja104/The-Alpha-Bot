@@ -1,9 +1,10 @@
 import threading
 
-from Alpha import dispatcher
-from Alpha.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
+
+from Alpha import dispatcher
+from Alpha.modules.sql import BASE, SESSION
 
 
 class Federations(BASE):
