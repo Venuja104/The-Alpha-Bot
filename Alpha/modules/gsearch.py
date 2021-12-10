@@ -1,6 +1,6 @@
 import html2text
 import requests
-from Shizu.events import register
+from Alpha.events import register
 from telethon import *
 from telethon.tl import functions, types
 from telethon.tl.types import *
