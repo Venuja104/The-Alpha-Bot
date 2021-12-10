@@ -1,10 +1,10 @@
 from io import BytesIO
 from time import sleep
 
-import Shizu.modules.sql.users_sql as sql
-from Shizu import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from Shizu.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from Shizu.modules.sql.users_sql import get_all_users
+import Alpha.modules.sql.users_sql as sql
+from Alpha import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from Alpha.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from Alpha.modules.sql.users_sql import get_all_users
 from telegram import TelegramError, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
