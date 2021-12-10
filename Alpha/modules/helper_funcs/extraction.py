@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from Shizu import LOGGER
-from Shizu.modules.users import get_user_id
+from Alpha import LOGGER
+from Alpha.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 from telethon.tl.functions.users import GetFullUserRequest
