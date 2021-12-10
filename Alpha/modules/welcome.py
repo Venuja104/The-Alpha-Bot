@@ -4,8 +4,8 @@ import re
 import time
 from functools import partial
 
-import Shizu.modules.sql.welcome_sql as sql
-from Shizu import (
+import Alpha.modules.sql.welcome_sql as sql
+from Alpha import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -17,15 +17,15 @@ from Shizu import (
     dispatcher,
     sw,
 )
-from Shizu.modules.helper_funcs.chat_status import is_user_ban_protected, user_admin
-from Shizu.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from Shizu.modules.helper_funcs.msg_types import get_welcome_type
-from Shizu.modules.helper_funcs.string_handling import (
+from Alpha.modules.helper_funcs.chat_status import is_user_ban_protected, user_admin
+from Alpha.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from Alpha.modules.helper_funcs.msg_types import get_welcome_type
+from Alpha.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from Shizu.modules.log_channel import loggable
-from Shizu.modules.sql.global_bans_sql import is_user_gbanned
+from Alpha.modules.log_channel import loggable
+from Alpha.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
