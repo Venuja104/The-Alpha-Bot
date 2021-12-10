@@ -1,8 +1,8 @@
 import asyncio
 import time
 
-from Shizu import DEV_USERS, telethn
-from Shizu.modules.helper_funcs.telethn.chatstatus import (
+from Alpha import DEV_USERS, telethn
+from Alpha.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
