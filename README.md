@@ -1,10 +1,10 @@
-# Shizu Based on Python Telegram Bot ![GitHub repo size](https://img.shields.io/github/repo-size/TeamInfinityBots/Shizu?label=Repo%20Size)
+# Alpha Zero Based on Python Telegram Bot ![GitHub repo size](https://img.shields.io/github/repo-size/Venuja104/The-Alpha-Bot?label=Repo%20Size)
 <p align="leaft">
-  <img src="https://telegra.ph/file/8a16bdd88fecbcfc0d6ae.jpg" width='600"'>
+  <img src="https://telegra.ph/file/d7e54f6a85a01c2d54cbe.jpg" width='600"'>
 </p>
 # 2 Branches available. this is main brach. swith advaced fr all fetures
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TeamInfinityBots/Shizu.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Venuja104/The-Alpha-Bot.git)
 
 
 ### Video Tutorial:
@@ -15,8 +15,8 @@ Complete guide on deploying @Shizu_herobot's clone on Heroku.
 ☆ Video by [Mr RG YT](https://youtube.com/cMrRGYT) ☆
 [![YouTube](https://img.shields.io/badge/YouTube-Video%20Tutorial-red?logo=youtube)](https://www.youtube.com/watch?v=6LVb2gsi-S4)
 
-## New version Avaiilable on Telegram as [Shizu](https://t.me/Shizu_herobot)
-## Shizu is the latest
+## New version Avaiilable on Telegram as [Alpha Zero](https://t.me/Shizu_herobot)
+## Alpha Zero is the latest
 
 
 
@@ -28,11 +28,10 @@ All other credits mentioned on top of scripts
 
 Should any be missing kindly let us know at [TeamShizu](https://t.me/ShizuUpdates) or simply submit a pull request on the readme.
 
-## Shizu the telegram Bot Project
+## Alpha Zero the telegram Bot Project
 The Advanced Branch (For PRO's)
-Shizu (advanced)
+Alpha (advanced)
 
 
 ## Special Credits
-- [TeamShizu](https://github.com/TeamShizu) - Developer of Project
-- [Gizako](https://github.com/Gizako) - A Co-Developer of project
+- [Venuja Thilakarathna](https://github.com/Venuja104) - Developer of Project
