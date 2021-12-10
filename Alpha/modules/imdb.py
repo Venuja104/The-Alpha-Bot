@@ -2,10 +2,11 @@ import re
 
 import bs4
 import requests
-from Alpha import telethn
-from Alpha.events import register
 from telethon import types
 from telethon.tl import functions
+
+from Alpha import telethn
+from Alpha.events import register
 
 langi = "en"
 

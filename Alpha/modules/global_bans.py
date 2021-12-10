@@ -3,6 +3,17 @@ import time
 from datetime import datetime
 from io import BytesIO
 
+from telegram import ParseMode, Update
+from telegram.error import BadRequest, TelegramError, Unauthorized
+from telegram.ext import (
+    CallbackContext,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+    run_async,
+)
+from telegram.utils.helpers import mention_html
+
 import Alpha.modules.sql.global_bans_sql as sql
 from Alpha import (
     DEMONS,
@@ -26,16 +37,6 @@ from Alpha.modules.helper_funcs.chat_status import (
 from Alpha.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 from Alpha.modules.helper_funcs.misc import send_to_list
 from Alpha.modules.sql.users_sql import get_user_com_chats
-from telegram import ParseMode, Update
-from telegram.error import BadRequest, TelegramError, Unauthorized
-from telegram.ext import (
-    CallbackContext,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-    run_async,
-)
-from telegram.utils.helpers import mention_html
 
 GBAN_ENFORCE_GROUP = 6
 

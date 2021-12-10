@@ -1,19 +1,21 @@
 from datetime import datetime
 from functools import wraps
 
-from Alpha.modules.helper_funcs.misc import is_module_loaded
 from telegram.ext import CallbackContext
+
+from Alpha.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
 if is_module_loaded(FILENAME):
-    from Alpha import EVENT_LOGS, LOGGER, dispatcher
-    from Alpha.modules.helper_funcs.chat_status import user_admin
-    from Alpha.modules.sql import log_channel_sql as sql
     from telegram import ParseMode, Update
     from telegram.error import BadRequest, Unauthorized
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
+
+    from Alpha import EVENT_LOGS, LOGGER, dispatcher
+    from Alpha.modules.helper_funcs.chat_status import user_admin
+    from Alpha.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)

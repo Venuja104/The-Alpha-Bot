@@ -6,10 +6,11 @@ import random
 from pathlib import Path
 
 from PIL import Image
-from Alpha import dispatcher
-from Alpha.modules.disable import DisableAbleCommandHandler
 from spongemock import spongemock
 from telegram.ext import run_async
+
+from Alpha import dispatcher
+from Alpha.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
