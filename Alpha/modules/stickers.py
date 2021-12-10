@@ -6,8 +6,8 @@ from html import escape
 import requests
 from bs4 import BeautifulSoup as bs
 from PIL import Image
-from Shizu import dispatcher
-from Shizu.modules.disable import DisableAbleCommandHandler
+from Alpha import dispatcher
+from Alpha.modules.disable import DisableAbleCommandHandler
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
