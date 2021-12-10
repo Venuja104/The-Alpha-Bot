@@ -89,7 +89,9 @@ buttons = [
     ],
 ]
 
-ALPHA_STICKER = "CAACAgUAAxkBAAIw5WGox1xPHoZo3kkK_3ALpHAu2qCAAAIqAwACfDhJVRXiA-sS8DQgIgQ"
+ALPHA_STICKER = (
+    "CAACAgUAAxkBAAIw5WGox1xPHoZo3kkK_3ALpHAu2qCAAAIqAwACfDhJVRXiA-sS8DQgIgQ"
+)
 
 HELP_STRINGS = f"""
 *Main Commands :* 🤖
