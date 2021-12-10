@@ -1,9 +1,9 @@
 import json
 
 import requests
-from Shizu import dispatcher
-from Shizu.modules.helper_funcs.alternate import send_message
-from Shizu.modules.helper_funcs.chat_status import user_admin
+from Alpha import dispatcher
+from Alpha.modules.helper_funcs.alternate import send_message
+from Alpha.modules.helper_funcs.chat_status import user_admin
 from telegram.ext import CommandHandler, run_async
 
 
