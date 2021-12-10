@@ -1,6 +1,6 @@
 import threading
 
-from Shizu.modules.sql import BASE, SESSION
+from Alpha.modules.sql import BASE, SESSION
 from sqlalchemy import Column, Integer, String
 
 
