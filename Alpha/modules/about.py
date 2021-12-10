@@ -1,5 +1,5 @@
 __help__ = """
-** Shizu - A Powerful Telegram Group Manager 🎶 **
+** AlphaZero - A Powerful Telegram Group Manager 🎶 **
 
 Powerful Abilities
 
@@ -9,6 +9,6 @@ Powerful Abilities
 
 • Youtube Downloader 🎵
 
-Developer [TeamShizu🇱🇰](https://t.me/Mr_Rasiyaa)
+Developer [TeamAlphaZero🇱🇰](https://t.me/TeamAlphaZero)
 """
 __mod_name__ = "About"
