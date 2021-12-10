@@ -6,17 +6,17 @@ import time
 import uuid
 from io import BytesIO
 
-import Shizu.modules.sql.feds_sql as sql
-from Shizu import DRAGONS, EVENT_LOGS, LOGGER, OWNER_ID, TIGERS, WOLVES, dispatcher
-from Shizu.modules.disable import DisableAbleCommandHandler
-from Shizu.modules.helper_funcs.alternate import send_message
-from Shizu.modules.helper_funcs.chat_status import is_user_admin
-from Shizu.modules.helper_funcs.extraction import (
+import Alpha.modules.sql.feds_sql as sql
+from Alpha import DRAGONS, EVENT_LOGS, LOGGER, OWNER_ID, TIGERS, WOLVES, dispatcher
+from Alpha.modules.disable import DisableAbleCommandHandler
+from Alpha.modules.helper_funcs.alternate import send_message
+from Alpha.modules.helper_funcs.chat_status import is_user_admin
+from Alpha.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from Shizu.modules.helper_funcs.string_handling import markdown_parser
+from Alpha.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
