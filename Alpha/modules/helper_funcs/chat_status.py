@@ -2,6 +2,9 @@ from functools import wraps
 from threading import RLock
 
 from cachetools import TTLCache
+from telegram import Chat, ChatMember, ParseMode, Update
+from telegram.ext import CallbackContext
+
 from Alpha import (
     DEL_CMDS,
     DEMONS,
@@ -12,8 +15,6 @@ from Alpha import (
     WOLVES,
     dispatcher,
 )
-from telegram import Chat, ChatMember, ParseMode, Update
-from telegram.ext import CallbackContext
 
 # stores admemes in memory for 10 min.
 ADMIN_CACHE = TTLCache(maxsize=512, ttl=60 * 10)
