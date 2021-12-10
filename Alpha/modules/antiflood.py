@@ -1,18 +1,18 @@
 import html
 from typing import Optional
 
-from Shizu import TIGERS, WOLVES, dispatcher
-from Shizu.modules.connection import connected
-from Shizu.modules.helper_funcs.alternate import send_message
-from Shizu.modules.helper_funcs.chat_status import (
+from Alpha import TIGERS, WOLVES, dispatcher
+from Alpha.modules.connection import connected
+from Alpha.modules.helper_funcs.alternate import send_message
+from Alpha.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from Shizu.modules.helper_funcs.string_handling import extract_time
-from Shizu.modules.log_channel import loggable
-from Shizu.modules.sql import antiflood_sql as sql
+from Alpha.modules.helper_funcs.string_handling import extract_time
+from Alpha.modules.log_channel import loggable
+from Alpha.modules.sql import antiflood_sql as sql
 from telegram import Chat, ChatPermissions, Message, Update, User
 from telegram.error import BadRequest
 from telegram.ext import (
