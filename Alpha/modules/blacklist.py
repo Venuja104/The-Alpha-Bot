@@ -1,17 +1,17 @@
 import html
 import re
 
-import Shizu.modules.sql.blacklist_sql as sql
-from Shizu import LOGGER, dispatcher
-from Shizu.modules.connection import connected
-from Shizu.modules.disable import DisableAbleCommandHandler
-from Shizu.modules.helper_funcs.alternate import send_message, typing_action
-from Shizu.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Shizu.modules.helper_funcs.extraction import extract_text
-from Shizu.modules.helper_funcs.misc import split_message
-from Shizu.modules.helper_funcs.string_handling import extract_time
-from Shizu.modules.log_channel import loggable
-from Shizu.modules.warns import warn
+import Alpha.modules.sql.blacklist_sql as sql
+from Alpha import LOGGER, dispatcher
+from Alpha.modules.connection import connected
+from Alpha.modules.disable import DisableAbleCommandHandler
+from Alpha.modules.helper_funcs.alternate import send_message, typing_action
+from Alpha.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Alpha.modules.helper_funcs.extraction import extract_text
+from Alpha.modules.helper_funcs.misc import split_message
+from Alpha.modules.helper_funcs.string_handling import extract_time
+from Alpha.modules.log_channel import loggable
+from Alpha.modules.warns import warn
 from telegram import ChatPermissions, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters, MessageHandler, run_async
