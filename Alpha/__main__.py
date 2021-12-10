@@ -7,7 +7,7 @@ import traceback
 from sys import argv
 from typing import Optional
 
-from Shizu import (
+from Alpha import (
     ALLOW_EXCL,
     BL_CHATS,
     CERT_PATH,
@@ -29,11 +29,11 @@ from Shizu import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from Shizu.modules import ALL_MODULES
-from Shizu.modules.helper_funcs.alternate import typing_action
-from Shizu.modules.helper_funcs.chat_status import is_user_admin
-from Shizu.modules.helper_funcs.misc import paginate_modules
-from Shizu.modules.helper_funcs.readable_time import get_readable_time
+from Alpha.modules import ALL_MODULES
+from Alpha.modules.helper_funcs.alternate import typing_action
+from Alpha.modules.helper_funcs.chat_status import is_user_admin
+from Alpha.modules.helper_funcs.misc import paginate_modules
+from Alpha.modules.helper_funcs.readable_time import get_readable_time
 from telegram import (
     Chat,
     InlineKeyboardButton,
@@ -62,36 +62,30 @@ from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
 PM_START_TEXT = """
-Hello there, I'm Shizu💖
-I'm a Powerful group manager bot With Cool Modules. Made by [Rasiyaa 🇱🇰](t.me/KingKnight_RG)
-Hit /help to find my list of available commands
+*Hello there, I'm Alpha Zero ✨
+I'm a Powerful group manager bot With Cool Modules. Made by [TeamAlphaZero](t.me/TeamAlphaZero)
+Hit /help to find my list of available commands.*
  
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="📢Updates Channel", url="https://t.me/ShizuUpdates"),
-        InlineKeyboardButton(
-            text="👥 Support Group", url="https://t.me/CozmoSupport_Official"
-        ),
+        InlineKeyboardButton(text="📌Updates Channel", url="https://t.me/AlphaZeroUpdates"),
+        InlineKeyboardButton(text="🖲 Support Group", url="https://t.me/AlphaBotSupport_Official"),
+    ],
+    [
+        InlineKeyboardButton(text="📜 Source Code", url="https://github.com/Venuja104/The-Alpha-Bot"),
+        InlineKeyboardButton(text="❔ Help", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="📜Source", url="https://www.youtube.com/watch?v=fXXEcAkWAFU"
-        ),
-        InlineKeyboardButton(text="❔ Help", url="http://t.me/TheCozmoBot?start=help"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="➕ Add Shizu to your group ➕",
-            url="t.me/Shizu_herobot?startgroup=true",
+            text="➕ Add Alpha Zero To Your Group ➕", url="t.me/TheAnkiVectorbot?startgroup=true"
         ),
     ],
 ]
 
-ALPHA_STICKER = (
-    "CAACAgUAAxkBAAIw5WGox1xPHoZo3kkK_3ALpHAu2qCAAAIqAwACfDhJVRXiA-sS8DQgIgQ"
-)
+
+ALPHA_STICKER = "CAACAgUAAxkBAAIw5WGox1xPHoZo3kkK_3ALpHAu2qCAAAIqAwACfDhJVRXiA-sS8DQgIgQ"
 
 HELP_STRINGS = f"""
 *Main Commands :* 🤖
@@ -127,7 +121,7 @@ USER_SETTINGS = {}
 GDPR = []
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("Shizu.modules." + module_name)
+    imported_module = importlib.import_module("Alpha.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -371,8 +365,8 @@ def Shizu_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"* Hi There  The name's {dispatcher.bot.first_name} \n\nAs  You I'm a next generational group management bot developed by Shizu Updates.* "
-            f"\n\n Join [ShizuUpdates](https://t.me/ShizuUpdates) To Keep Yourself Updated About {dispatcher.bot.first_name}"
+            text=f"* Hi There  The name's {dispatcher.bot.first_name} \n\nAs  You I'm a next generational group management bot developed by Alpha Updates.* "
+            f"\n\n Join [AlphaZeroUpdates](https://t.me/AlphaZeroUpdates) To Keep Yourself Updated About {dispatcher.bot.first_name}"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features"
             f"\n\nYou Can Know More About Me By Clicking The Below Buttons",
@@ -405,7 +399,7 @@ def Shizu_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [Shizu Support](https://t.me/ShizuSupport_Official).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [Alpha Support](https://t.me/AlphaBotSupport_Official).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -423,9 +417,9 @@ def Shizu_about_callback(update, context):
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
-            text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [Shizu](https://t.me/Shizu_herobot)."
-            f"\n\n{dispatcher.bot.first_name}'s source code was written by Rasiyaa"
+            text=f"*{dispatcher.bot.first_name} Is the redisigned version of Cozmo and Naruto for the best performance.*"
+            f"\n\nBased on [Cozmo](https://t.me/TheCozmo_Bot)."
+            f"\n\n{dispatcher.bot.first_name}'s source code was written by Venuja Thilakarathna"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
