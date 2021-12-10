@@ -1,14 +1,14 @@
 import html
 
-from Shizu import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from Shizu.modules.disable import DisableAbleCommandHandler
-from Shizu.modules.helper_funcs.chat_status import (
+from Alpha import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from Alpha.modules.disable import DisableAbleCommandHandler
+from Alpha.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from Shizu.modules.sql import cleaner_sql as sql
+from Alpha.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
