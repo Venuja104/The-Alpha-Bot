@@ -2,11 +2,12 @@ import time
 from typing import List
 
 import requests
+from telegram import ParseMode, Update
+from telegram.ext import CallbackContext, run_async
+
 from Alpha import StartTime, dispatcher
 from Alpha.modules.disable import DisableAbleCommandHandler
 from Alpha.modules.helper_funcs.chat_status import sudo_plus
-from telegram import ParseMode, Update
-from telegram.ext import CallbackContext, run_async
 
 sites_list = {
     "Telegram": "https://api.telegram.org",

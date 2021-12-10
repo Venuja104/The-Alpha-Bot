@@ -3,9 +3,10 @@ import os
 import aiohttp
 from pyrogram import filters
 from pytube import YouTube
+from youtubesearchpython import VideosSearch
+
 from Alpha import LOGGER, pbot
 from Alpha.utils.ut import get_arg
-from youtubesearchpython import VideosSearch
 
 
 def yt_search(song):

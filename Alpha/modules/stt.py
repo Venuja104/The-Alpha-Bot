@@ -2,12 +2,13 @@ import os
 from datetime import datetime
 
 import requests
-from Alpha import *
-from Alpha import telethn
-from Alpha.events import register
 from telethon import *
 from telethon.tl import functions, types
 from telethon.tl.types import *
+
+from Alpha import *
+from Alpha import telethn
+from Alpha.events import register
 
 
 async def is_register_admin(chat, user):

@@ -4,8 +4,6 @@ import json
 import os
 import time
 
-from Alpha.events import register
-from Alpha.utils import progress
 from telethon.tl.types import DocumentAttributeAudio
 from youtube_dl import YoutubeDL
 from youtube_dl.utils import (
@@ -18,6 +16,9 @@ from youtube_dl.utils import (
     UnavailableVideoError,
     XAttrMetadataError,
 )
+
+from Alpha.events import register
+from Alpha.utils import progress
 
 try:
 

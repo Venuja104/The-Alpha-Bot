@@ -4,11 +4,12 @@ import base64
 from io import BytesIO
 
 from PIL import Image
+from telegram import Update
+from telegram.ext import CallbackContext, run_async
+
 from Alpha import dispatcher
 from Alpha.modules.disable import DisableAbleCommandHandler
 from Alpha.modules.thonkify_dict import thonkifydict
-from telegram import Update
-from telegram.ext import CallbackContext, run_async
 
 
 @run_async

@@ -1,9 +1,10 @@
 import random
 
-from Alpha import dispatcher
-from Alpha.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
+
+from Alpha import dispatcher
+from Alpha.modules.disable import DisableAbleCommandHandler
 
 reactions = [
     "( ͡° ͜ʖ ͡°)",

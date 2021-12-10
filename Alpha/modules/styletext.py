@@ -1,8 +1,9 @@
+from telegram import ParseMode
+from telegram.ext import run_async
+
 from Alpha import dispatcher
 from Alpha.modules.disable import DisableAbleCommandHandler
 from Alpha.modules.helper_funcs.alternate import typing_action
-from telegram import ParseMode
-from telegram.ext import run_async
 
 normiefont = [
     "a",

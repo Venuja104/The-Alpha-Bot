@@ -11,12 +11,6 @@ import requests as r
 import wikipedia
 from bs4 import BeautifulSoup
 from requests import get, post
-from Alpha import DEV_USERS, OWNER_ID, dispatcher
-from Alpha.__main__ import GDPR, STATS
-from Alpha.modules.disable import DisableAbleCommandHandler
-from Alpha.modules.helper_funcs.alternate import send_action, typing_action
-from Alpha.modules.helper_funcs.chat_status import user_admin
-from Alpha.modules.helper_funcs.filters import CustomFilters
 from telegram import (
     Chat,
     ChatAction,
@@ -32,6 +26,13 @@ from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown
 from tswift import Song
+
+from Alpha import DEV_USERS, OWNER_ID, dispatcher
+from Alpha.__main__ import GDPR, STATS
+from Alpha.modules.disable import DisableAbleCommandHandler
+from Alpha.modules.helper_funcs.alternate import send_action, typing_action
+from Alpha.modules.helper_funcs.chat_status import user_admin
+from Alpha.modules.helper_funcs.filters import CustomFilters
 
 
 @run_async

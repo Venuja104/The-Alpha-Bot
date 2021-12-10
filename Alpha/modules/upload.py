@@ -5,10 +5,11 @@ import time
 import traceback
 
 import aiohttp
+from telethon import events
+
 from Alpha import telethn as bot
 from Alpha.modules.urluploader import download_file
 from Alpha.utils.uputils import humanbytes, progress
-from telethon import events
 
 DOWNLOADPATH = "Downloads/"
 
