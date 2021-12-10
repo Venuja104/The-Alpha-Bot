@@ -1,6 +1,6 @@
 import html
 
-from Shizu import (
+from Alpha import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -10,8 +10,8 @@ from Shizu import (
     WOLVES,
     dispatcher,
 )
-from Shizu.modules.disable import DisableAbleCommandHandler
-from Shizu.modules.helper_funcs.chat_status import (
+from Alpha.modules.disable import DisableAbleCommandHandler
+from Alpha.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -21,9 +21,9 @@ from Shizu.modules.helper_funcs.chat_status import (
     user_admin,
     user_can_ban,
 )
-from Shizu.modules.helper_funcs.extraction import extract_user_and_text
-from Shizu.modules.helper_funcs.string_handling import extract_time
-from Shizu.modules.log_channel import gloggable, loggable
+from Alpha.modules.helper_funcs.extraction import extract_user_and_text
+from Alpha.modules.helper_funcs.string_handling import extract_time
+from Alpha.modules.log_channel import gloggable, loggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
