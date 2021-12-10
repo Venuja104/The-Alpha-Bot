@@ -1,4 +1,4 @@
-import Shizu.modules.sql.blacklistusers_sql as sql
+import Alpha.modules.sql.blacklistusers_sql as sql
 from pyrate_limiter import (
     BucketFullException,
     Duration,
@@ -6,7 +6,7 @@ from pyrate_limiter import (
     MemoryListBucket,
     RequestRate,
 )
-from Shizu import ALLOW_EXCL, DEMONS, DEV_USERS, DRAGONS, TIGERS, WOLVES
+from Alpha import ALLOW_EXCL, DEMONS, DEV_USERS, DRAGONS, TIGERS, WOLVES
 from telegram import Update
 from telegram.ext import CommandHandler, Filters, MessageHandler, RegexHandler
 
