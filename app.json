@@ -1,15 +1,15 @@
 {
-      "name": "Shizu",
+      "name": "Alpha Zero",
       "description": "An Anime themed Telegram group management bot.",
-      "logo": " https://telegra.ph/file/89336a96eb696d94558ba.jpg",
+      "logo": "https://telegra.ph/file/d7e54f6a85a01c2d54cbe.jpg",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Shizu"
+         "Alpha"
       ],   
-   "repository": "https://github.com/TeamInfinityBots/Shizu",
+   "repository": "https://github.com/Venuja104/The-Alpha-Bot",
    "addons": [
       {
          "options": {
@@ -44,13 +44,13 @@
       },    
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, empty this field if you dont have one.",
-         "required": false,
+         "required": true,
          "value": "sqldbtype://username:pw@hostname:port/db_name"
       },
          "RemoveBG_API": {
             "description": "Get this api from https://www.remove.bg/b/background-removal-api",
             "value": "",
-            "required": false
+            "required": true
         },
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
@@ -59,12 +59,12 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "Mr_Rasiyaa"
+         "value": "Venuja_Sadew"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "ShizuUpdates"
+         "value": "AlphaBotSupport_Official"
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
@@ -88,12 +88,12 @@
       },
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
-         "required": false,
+         "required": true,
          "value": "1391755824 1773779239 1848277863"
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
-         "required": false,
+         "required": true,
          "value": ""
       }, 
       "STRICT_GBAN": {
@@ -102,12 +102,12 @@
       },
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
-         "required": false,
+         "required": true,
          "value": "1391755824 1773779239 1848277863"
       },
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
-         "required": false,
+         "required": true,
          "value": "1391755824 1773779239 1848277863"
       },
       "TIGERS": {
@@ -117,7 +117,7 @@
       },
       "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
-         "required": false,
+         "required": true,
          "value": "1391755824 1758509403 1848277863"
       },
       "ENV": {
@@ -164,7 +164,7 @@
       },
       "AI_API_KEY": {
       "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
-         "required": false,
+         "required": true,
          "value": ""
    },      
       "BAN_STICKER": {
@@ -183,8 +183,8 @@
       "anime",
       "group",
       "manager",
-      "daisy"
+      "Alpha"
    ],
-   "name": "Shizu",
-   "repository": "https://github.com/TeamInfinityBots/Shizu"
+   "name": "Alpha Zero",
+   "repository": "https://github.com/Venuja104/The-Alpha-Bot"
 }
