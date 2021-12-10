@@ -1,9 +1,9 @@
 from typing import Optional
 
-import Shizu.modules.sql.rules_sql as sql
-from Shizu import dispatcher
-from Shizu.modules.helper_funcs.chat_status import user_admin
-from Shizu.modules.helper_funcs.string_handling import markdown_parser
+import Alpha.modules.sql.rules_sql as sql
+from Alpha import dispatcher
+from Alpha.modules.helper_funcs.chat_status import user_admin
+from Alpha.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
