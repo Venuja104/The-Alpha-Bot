@@ -1,7 +1,7 @@
 import os
 
 from pyrogram import filters
-from Shizu import pbot as app
+from Alpha import pbot as app
 from telegraph import upload_file
 
 
