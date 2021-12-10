@@ -1,3 +1,3 @@
-worker: python3 -m Shizu
-web: python3 -m Shizu
+worker: python3 -m Alpha
+web: python3 -m Alpha
 ps:scale worker=1
