@@ -7,33 +7,6 @@ import traceback
 from sys import argv
 from typing import Optional
 
-from Alpha import (
-    ALLOW_EXCL,
-    BL_CHATS,
-    CERT_PATH,
-    DONATION_LINK,
-    LOGGER,
-    OWNER_ID,
-    PORT,
-    SUPPORT_CHAT,
-    TOKEN,
-    URL,
-    WEBHOOK,
-    WHITELIST_CHATS,
-    StartTime,
-    dispatcher,
-    pbot,
-    telethn,
-    updater,
-)
-
-# needed to dynamically load modules
-# NOTE: Module order is not guaranteed, specify that in the config file!
-from Alpha.modules import ALL_MODULES
-from Alpha.modules.helper_funcs.alternate import typing_action
-from Alpha.modules.helper_funcs.chat_status import is_user_admin
-from Alpha.modules.helper_funcs.misc import paginate_modules
-from Alpha.modules.helper_funcs.readable_time import get_readable_time
 from telegram import (
     Chat,
     InlineKeyboardButton,
@@ -61,6 +34,34 @@ from telegram.ext import (
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
+from Alpha import (
+    ALLOW_EXCL,
+    BL_CHATS,
+    CERT_PATH,
+    DONATION_LINK,
+    LOGGER,
+    OWNER_ID,
+    PORT,
+    SUPPORT_CHAT,
+    TOKEN,
+    URL,
+    WEBHOOK,
+    WHITELIST_CHATS,
+    StartTime,
+    dispatcher,
+    pbot,
+    telethn,
+    updater,
+)
+
+# needed to dynamically load modules
+# NOTE: Module order is not guaranteed, specify that in the config file!
+from Alpha.modules import ALL_MODULES
+from Alpha.modules.helper_funcs.alternate import typing_action
+from Alpha.modules.helper_funcs.chat_status import is_user_admin
+from Alpha.modules.helper_funcs.misc import paginate_modules
+from Alpha.modules.helper_funcs.readable_time import get_readable_time
+
 PM_START_TEXT = """
 *Hello there, I'm Alpha Zero ✨
 I'm a Powerful group manager bot With Cool Modules. Made by [TeamAlphaZero](t.me/TeamAlphaZero)
@@ -70,22 +71,31 @@ Hit /help to find my list of available commands.*
 
 buttons = [
     [
-        InlineKeyboardButton(text="📌Updates Channel", url="https://t.me/AlphaZeroUpdates"),
-        InlineKeyboardButton(text="🖲 Support Group", url="https://t.me/AlphaBotSupport_Official"),
+        InlineKeyboardButton(
+            text="📌Updates Channel", url="https://t.me/AlphaZeroUpdates"
+        ),
+        InlineKeyboardButton(
+            text="🖲 Support Group", url="https://t.me/AlphaBotSupport_Official"
+        ),
     ],
     [
-        InlineKeyboardButton(text="📜 Source Code", url="https://github.com/Venuja104/The-Alpha-Bot"),
+        InlineKeyboardButton(
+            text="📜 Source Code", url="https://github.com/Venuja104/The-Alpha-Bot"
+        ),
         InlineKeyboardButton(text="❔ Help", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="➕ Add Alpha Zero To Your Group ➕", url="t.me/TheAnkiVectorbot?startgroup=true"
+            text="➕ Add Alpha Zero To Your Group ➕",
+            url="t.me/TheAnkiVectorbot?startgroup=true",
         ),
     ],
 ]
 
 
-ALPHA_STICKER = "CAACAgUAAxkBAAIw5WGox1xPHoZo3kkK_3ALpHAu2qCAAAIqAwACfDhJVRXiA-sS8DQgIgQ"
+ALPHA_STICKER = (
+    "CAACAgUAAxkBAAIw5WGox1xPHoZo3kkK_3ALpHAu2qCAAAIqAwACfDhJVRXiA-sS8DQgIgQ"
+)
 
 HELP_STRINGS = f"""
 *Main Commands :* 🤖
