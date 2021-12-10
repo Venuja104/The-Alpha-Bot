@@ -1,7 +1,8 @@
 import requests
-from Alpha import CASH_API_KEY, dispatcher
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
+
+from Alpha import CASH_API_KEY, dispatcher
 
 
 @run_async

@@ -1,13 +1,14 @@
 import re
 import time
 
+from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram.error import BadRequest, Unauthorized
+from telegram.ext import CallbackQueryHandler, CommandHandler, run_async
+
 import Alpha.modules.sql.connection_sql as sql
 from Alpha import DEV_USERS, DRAGONS, dispatcher
 from Alpha.modules.helper_funcs import chat_status
 from Alpha.modules.helper_funcs.alternate import send_message, typing_action
-from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from telegram.error import BadRequest, Unauthorized
-from telegram.ext import CallbackQueryHandler, CommandHandler, run_async
 
 user_admin = chat_status.user_admin
 
