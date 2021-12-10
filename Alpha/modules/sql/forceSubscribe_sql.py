@@ -1,5 +1,5 @@
-#    Copyright (C) 2020-2021 by @TeamShizu
-#    This program is a part of Shizu TG bot project
+#    Copyright (C) 2020-2021 by @TeamAlphaZero
+#    This program is a part of Alpha TG bot project
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -14,7 +14,7 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
-from Shizu.modules.sql import BASE, SESSION
+from Alpha.modules.sql import BASE, SESSION
 from sqlalchemy import Column, Numeric, String
 
 
