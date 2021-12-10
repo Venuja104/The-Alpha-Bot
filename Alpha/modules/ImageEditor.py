@@ -24,6 +24,6 @@ __help__ = """
 
 * 🔸Bot🔸 *
 
-* @Shizu_herobot *
+* @TheAlphaZeroBot *
 """
 __mod_name__ = "Image Editor"
