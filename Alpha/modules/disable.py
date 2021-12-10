@@ -2,9 +2,9 @@ import importlib
 from typing import Union
 
 from future.utils import string_types
-from Shizu import dispatcher
-from Shizu.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from Shizu.modules.helper_funcs.misc import is_module_loaded
+from Alpha import dispatcher
+from Alpha.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from Alpha.modules.helper_funcs.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
