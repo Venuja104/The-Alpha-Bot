@@ -3,22 +3,22 @@ import os
 import time
 from io import BytesIO
 
-# from Shizu.modules.sql import warns_sql as warnssql
-import Shizu.modules.sql.blacklist_sql as blacklistsql
+# from Alpha.modules.sql import warns_sql as warnssql
+import Alpha.modules.sql.blacklist_sql as blacklistsql
 
-# from Shizu.modules.sql import cust_filters_sql as filtersql
-# import Shizu.modules.sql.welcome_sql as welcsql
-import Shizu.modules.sql.locks_sql as locksql
-import Shizu.modules.sql.notes_sql as sql
+# from Alpha.modules.sql import cust_filters_sql as filtersql
+# import Alpha.modules.sql.welcome_sql as welcsql
+import Alpha.modules.sql.locks_sql as locksql
+import Alpha.modules.sql.notes_sql as sql
 
-# from Shizu.modules.rules import get_rules
-import Shizu.modules.sql.rules_sql as rulessql
-from Shizu import JOIN_LOGGER, LOGGER, OWNER_ID, dispatcher
-from Shizu.__main__ import DATA_IMPORT
-from Shizu.modules.connection import connected
-from Shizu.modules.helper_funcs.alternate import typing_action
-from Shizu.modules.helper_funcs.chat_status import user_admin
-from Shizu.modules.sql import disable_sql as disabledsql
+# from Alpha.modules.rules import get_rules
+import Alpha.modules.sql.rules_sql as rulessql
+from Alpha import JOIN_LOGGER, LOGGER, OWNER_ID, dispatcher
+from Alpha.__main__ import DATA_IMPORT
+from Alpha.modules.connection import connected
+from Alpha.modules.helper_funcs.alternate import typing_action
+from Alpha.modules.helper_funcs.chat_status import user_admin
+from Alpha.modules.sql import disable_sql as disabledsql
 from telegram import Message, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
