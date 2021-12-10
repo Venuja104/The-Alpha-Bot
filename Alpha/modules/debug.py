@@ -1,8 +1,8 @@
 import datetime
 import os
 
-from Shizu import dispatcher, telethn
-from Shizu.modules.helper_funcs.chat_status import dev_plus
+from Alpha import dispatcher, telethn
+from Alpha.modules.helper_funcs.chat_status import dev_plus
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telethon import events
